@@ -118,12 +118,10 @@ const [form] = Form.useForm();
         },
     ];
     return (<div>
-
-
         <Button type="primary" htmlType="submit" onClick={showModal}>
             Add Vehicle
         </Button>
-        <Modal title="Basic Modal" open={isModalOpen.visibility} onOk={handleOk} onCancel={handleCancel}>
+        <Modal  title="Basic Modal" open={isModalOpen.visibility} onOk={handleOk} onCancel={handleCancel}>
             <Form layout="vertical" name="addVehicle" onFinish={onFinish} onFinishFailed={onFinishFailed}>
                 <Row gutter={16}>
                     <Col>
